@@ -7,10 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ISIsolator.h"
 
 @interface ISAppDelegate : NSObject <NSApplicationDelegate>
 
+@property ISIsolator *isolator;
+
 @property (assign) IBOutlet NSWindow *window;
 @property NSEvent *monitor;
+
+@property NSWindow* iswindow;
 
 @end

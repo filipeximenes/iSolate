@@ -1,5 +1,5 @@
 //
-//  ISAppListWindow.h
+//  ISAppListView.h
 //  Isolate
 //
 //  Created by Filipe Ximenes on 4/26/13.
@@ -8,6 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ISAppListWindow : NSWindow
+@interface ISAppListView : NSView
+
+//@property NSArray *
+
+- (void) drawApplicationImages:(NSMutableArray*) appList;
 
 @end
