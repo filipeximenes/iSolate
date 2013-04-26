@@ -11,5 +11,6 @@
 @interface ISAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property NSEvent *monitor;
 
 @end

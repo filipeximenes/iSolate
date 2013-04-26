@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA16A719172994F90078E6AB /* backup in Resources */ = {isa = PBXBuildFile; fileRef = CA16A718172994F90078E6AB /* backup */; };
 		CA8680EF1728BA6000A0FB8F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8680EE1728BA6000A0FB8F /* Cocoa.framework */; };
 		CA8680F91728BA6000A0FB8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA8680F71728BA6000A0FB8F /* InfoPlist.strings */; };
 		CA8680FB1728BA6000A0FB8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8680FA1728BA6000A0FB8F /* main.m */; };
 		CA8680FF1728BA6000A0FB8F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA8680FD1728BA6000A0FB8F /* Credits.rtf */; };
 		CA8681021728BA6000A0FB8F /* ISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8681011728BA6000A0FB8F /* ISAppDelegate.m */; };
-		CA8681051728BA6000A0FB8F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8681031728BA6000A0FB8F /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA16A718172994F90078E6AB /* backup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = backup; sourceTree = "<group>"; };
 		CA8680EB1728BA6000A0FB8F /* Isolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Isolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8680EE1728BA6000A0FB8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CA8680F11728BA6000A0FB8F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -28,7 +29,6 @@
 		CA8680FE1728BA6000A0FB8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		CA8681001728BA6000A0FB8F /* ISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISAppDelegate.h; sourceTree = "<group>"; };
 		CA8681011728BA6000A0FB8F /* ISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISAppDelegate.m; sourceTree = "<group>"; };
-		CA8681041728BA6000A0FB8F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 			children = (
 				CA8681001728BA6000A0FB8F /* ISAppDelegate.h */,
 				CA8681011728BA6000A0FB8F /* ISAppDelegate.m */,
-				CA8681031728BA6000A0FB8F /* MainMenu.xib */,
+				CA16A718172994F90078E6AB /* backup */,
 				CA8680F51728BA6000A0FB8F /* Supporting Files */,
 			);
 			path = Isolate;
@@ -156,7 +156,7 @@
 			files = (
 				CA8680F91728BA6000A0FB8F /* InfoPlist.strings in Resources */,
 				CA8680FF1728BA6000A0FB8F /* Credits.rtf in Resources */,
-				CA8681051728BA6000A0FB8F /* MainMenu.xib in Resources */,
+				CA16A719172994F90078E6AB /* backup in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +189,6 @@
 				CA8680FE1728BA6000A0FB8F /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		CA8681031728BA6000A0FB8F /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA8681041728BA6000A0FB8F /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -304,6 +296,7 @@
 				CA86810A1728BA6000A0FB8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
