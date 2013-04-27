@@ -60,6 +60,10 @@
     return NSMakeRect(x, y, w, h);
 }
 
+- (void)hightlightItemOnPosition:(int) pos{
+    [self.appListView hightlightItemOnPosition:pos];
+}
+
 - (BOOL) canBecomeKeyWindow
 {
     return YES;

@@ -16,6 +16,7 @@
 		CAA31202172ADDCE00277079 /* ISAppListWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA31201172ADDCE00277079 /* ISAppListWindow.m */; };
 		CAA31205172ADF0F00277079 /* ISAppListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA31204172ADF0F00277079 /* ISAppListView.m */; };
 		CAA3120B172AE9BF00277079 /* ISIsolator.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3120A172AE9BF00277079 /* ISIsolator.m */; };
+		CAA3120E172B1B7F00277079 /* ISIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3120D172B1B7F00277079 /* ISIconView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		CAA31204172ADF0F00277079 /* ISAppListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISAppListView.m; sourceTree = "<group>"; };
 		CAA31209172AE9BF00277079 /* ISIsolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISIsolator.h; sourceTree = "<group>"; };
 		CAA3120A172AE9BF00277079 /* ISIsolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISIsolator.m; sourceTree = "<group>"; };
+		CAA3120C172B1B7F00277079 /* ISIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISIconView.h; sourceTree = "<group>"; };
+		CAA3120D172B1B7F00277079 /* ISIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISIconView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				CAA31201172ADDCE00277079 /* ISAppListWindow.m */,
 				CAA31203172ADF0F00277079 /* ISAppListView.h */,
 				CAA31204172ADF0F00277079 /* ISAppListView.m */,
+				CAA3120C172B1B7F00277079 /* ISIconView.h */,
+				CAA3120D172B1B7F00277079 /* ISIconView.m */,
 			);
 			name = Class;
 			path = /Users/filipeximenes/Projects/Isolate/Class;
@@ -196,6 +201,7 @@
 				CAA31202172ADDCE00277079 /* ISAppListWindow.m in Sources */,
 				CAA31205172ADF0F00277079 /* ISAppListView.m in Sources */,
 				CAA3120B172AE9BF00277079 /* ISIsolator.m in Sources */,
+				CAA3120E172B1B7F00277079 /* ISIconView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

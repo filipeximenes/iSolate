@@ -7,6 +7,7 @@
 //
 
 #import "ISAppListView.h"
+#import "ISIconView.h"
 
 #define ICON_SIZE 140
 #define MARGIN 25
@@ -17,10 +18,26 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code here.
+        self.iconViews = [[NSMutableArray alloc] init];
     }
     
     return self;
+}
+
+- (void)hightlightItemOnPosition:(int) pos
+{
+    for (ISIconView* icon in self.iconViews){
+        icon.isHighlighted = FALSE;
+    }
+    
+    ISIconView *icon = [self.iconViews objectAtIndex:pos];
+    icon.isHighlighted = TRUE;
+    
+    [self setNeedsDisplay:TRUE];
+    
+    for (ISIconView* icon in self.iconViews){
+        [icon setNeedsDisplay];
+    }
 }
 
 - (void) drawApplicationImages:(NSMutableArray*) appList
@@ -30,14 +47,17 @@
     for (int i = 0; i < appList.count; i++){
         NSRunningApplication *app = [appList objectAtIndex:i];
         
-        NSRect rect = NSMakeRect(MARGIN + ICON_SIZE * i, iconHeight, ICON_SIZE, ICON_SIZE);
-        NSImageView *imageView = [[NSImageView alloc] initWithFrame:rect];
+        NSRect frame = NSMakeRect(MARGIN + i * ICON_SIZE, iconHeight, ICON_SIZE, ICON_SIZE);
+        ISIconView *imageView = [[ISIconView alloc] initWithFrame:frame];
         NSImage *appImage = [app icon];
         [appImage setSize:NSMakeSize(ICON_SIZE, ICON_SIZE)];
         imageView.image = appImage;
-                
+        
         [self addSubview:imageView];
+        [self.iconViews addObject:imageView];
     }
+    
+//    
 }
 
 - (void)drawRect:(NSRect)rect

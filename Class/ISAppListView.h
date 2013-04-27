@@ -10,8 +10,9 @@
 
 @interface ISAppListView : NSView
 
-//@property NSArray *
+@property NSMutableArray *iconViews;
 
 - (void) drawApplicationImages:(NSMutableArray*) appList;
+- (void)hightlightItemOnPosition:(int) pos;
 
 @end

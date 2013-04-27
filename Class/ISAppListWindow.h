@@ -16,5 +16,6 @@
 @property NSArray *appList;
 
 - (id)initWithAppList:(NSArray*) appList;
+- (void)hightlightItemOnPosition:(int) pos;
 
 @end

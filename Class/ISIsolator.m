@@ -68,7 +68,7 @@ ISIsolator *isolator;
     
     if (app != nil){
         [app activateWithOptions:(NSApplicationActivateIgnoringOtherApps|NSApplicationActivateAllWindows)];
-        NSLog(@"*%@", [app localizedName]);
+//        NSLog(@"*%@", [app localizedName]);
     }
     
     [self.appWindow close];
@@ -93,11 +93,7 @@ ISIsolator *isolator;
 }
 
 - (void) nextApplication
-{
-    if (self.spaceAppList.count){
-        self.currentSelected = (self.currentSelected + 1) % self.spaceAppList.count;
-    }
-    
+{    
     self.switchedApplication = TRUE;
     
     if (self.appWindow == nil){
@@ -108,10 +104,15 @@ ISIsolator *isolator;
         }
     }
     
-    NSRunningApplication *selectedApp = [self selectedApplication];
-    if (selectedApp){
-        NSLog(@"%@", [selectedApp localizedName]);
+    if (self.spaceAppList.count > 0){
+        self.currentSelected = (self.currentSelected + 1) % self.spaceAppList.count;
+        [self.appWindow hightlightItemOnPosition:self.currentSelected];
     }
+    
+//    NSRunningApplication *selectedApp = [self selectedApplication];
+//    if (selectedApp){
+//        NSLog(@"%@", [selectedApp localizedName]);
+//    }
 }
 
 CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon)
