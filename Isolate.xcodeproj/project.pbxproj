@@ -17,6 +17,7 @@
 		CAA31205172ADF0F00277079 /* ISAppListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA31204172ADF0F00277079 /* ISAppListView.m */; };
 		CAA3120B172AE9BF00277079 /* ISIsolator.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3120A172AE9BF00277079 /* ISIsolator.m */; };
 		CAA3120E172B1B7F00277079 /* ISIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3120D172B1B7F00277079 /* ISIconView.m */; };
+		CABAB0A9172CCEB300772A67 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CABAB0A8172CCEB300772A67 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		CAA3120A172AE9BF00277079 /* ISIsolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISIsolator.m; sourceTree = "<group>"; };
 		CAA3120C172B1B7F00277079 /* ISIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISIconView.h; sourceTree = "<group>"; };
 		CAA3120D172B1B7F00277079 /* ISIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISIconView.m; sourceTree = "<group>"; };
+		CABAB0A8172CCEB300772A67 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		CAA311FF172ADD6C00277079 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				CABAB0A8172CCEB300772A67 /* icon.png */,
 				CAA31209172AE9BF00277079 /* ISIsolator.h */,
 				CAA3120A172AE9BF00277079 /* ISIsolator.m */,
 				CAA31200172ADDCE00277079 /* ISAppListWindow.h */,
@@ -186,6 +189,7 @@
 				CA8680F91728BA6000A0FB8F /* InfoPlist.strings in Resources */,
 				CA8680FF1728BA6000A0FB8F /* Credits.rtf in Resources */,
 				CA16A719172994F90078E6AB /* backup in Resources */,
+				CABAB0A9172CCEB300772A67 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +297,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Isolate/Isolate-Prefix.pch";
 				INFOPLIST_FILE = "Isolate/Isolate-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -305,6 +310,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Isolate/Isolate-Prefix.pch";
 				INFOPLIST_FILE = "Isolate/Isolate-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

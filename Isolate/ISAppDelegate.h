@@ -18,4 +18,6 @@
 
 @property NSWindow* iswindow;
 
+@property NSStatusItem *statusItem;
+
 @end
