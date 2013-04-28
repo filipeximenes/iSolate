@@ -26,8 +26,9 @@ NSMenu *theMenu;
     theMenu = [[NSMenu alloc] initWithTitle:@""];
     [theMenu setAutoenablesItems:NO];
     
-    tItem = [theMenu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@"q"];
-    [tItem setKeyEquivalentModifierMask:NSCommandKeyMask];
+    [theMenu addItemWithTitle:@"About Isolate" action:@selector(showAboutPane) keyEquivalent:@""];
+    [theMenu addItem:[NSMenuItem separatorItem]];    
+    tItem = [theMenu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@""];
     
     NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
     statusItem = [statusBar statusItemWithLength:NSSquareStatusItemLength];
@@ -39,6 +40,11 @@ NSMenu *theMenu;
 - (void) runner
 {
     self.isolator = [[ISIsolator alloc] init];
+}
+
+- (void) showAboutPane
+{
+    [[NSApplication sharedApplication] orderFrontStandardAboutPanel:self];
 }
 
 @end

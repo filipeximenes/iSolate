@@ -98,10 +98,7 @@ ISIsolator *isolator;
     
     if (self.appWindow == nil){
         self.appWindow = [[ISAppListWindow alloc] initWithAppList:self.spaceAppList];
-        
-        if (self.spaceAppList.count > 0){
-            [self.appWindow makeKeyAndOrderFront:self];
-        }
+        [self.appWindow makeKeyAndOrderFront:self];
     }
     
     if (self.spaceAppList.count > 0){

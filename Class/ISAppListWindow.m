@@ -45,7 +45,12 @@
     int w;
     int h;
     
-    w = (appList.count * ICON_SIZE) + (MARGIN * 2);
+    int count = 1;
+    if (appList.count > 0){
+        count = (int)appList.count;
+    }
+    
+    w = (count * ICON_SIZE) + (MARGIN * 2);
     
     NSRect screenFrame = [[NSScreen mainScreen] frame];
     
