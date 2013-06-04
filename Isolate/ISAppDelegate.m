@@ -32,7 +32,7 @@ NSMenu *theMenu;
     
     NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
     statusItem = [statusBar statusItemWithLength:NSSquareStatusItemLength];
-    [statusItem setImage:[NSImage imageNamed:@"icon.png"]];
+    [statusItem setImage:[NSImage imageNamed:@"bar_icon.png"]];
     [statusItem setHighlightMode:YES];
     [statusItem setMenu:theMenu];
 }
@@ -44,7 +44,9 @@ NSMenu *theMenu;
 
 - (void) showAboutPane
 {
-    [[NSApplication sharedApplication] orderFrontStandardAboutPanel:self];
+    NSApplication *app = [NSApplication sharedApplication];
+    [app orderFrontStandardAboutPanel:self];
+    [app activateIgnoringOtherApps:YES];
 }
 
 @end

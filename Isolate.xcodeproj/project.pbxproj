@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA16A719172994F90078E6AB /* backup in Resources */ = {isa = PBXBuildFile; fileRef = CA16A718172994F90078E6AB /* backup */; };
 		CA8680EF1728BA6000A0FB8F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8680EE1728BA6000A0FB8F /* Cocoa.framework */; };
 		CA8680F91728BA6000A0FB8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA8680F71728BA6000A0FB8F /* InfoPlist.strings */; };
 		CA8680FB1728BA6000A0FB8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8680FA1728BA6000A0FB8F /* main.m */; };
@@ -17,11 +16,15 @@
 		CAA31205172ADF0F00277079 /* ISAppListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA31204172ADF0F00277079 /* ISAppListView.m */; };
 		CAA3120B172AE9BF00277079 /* ISIsolator.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3120A172AE9BF00277079 /* ISIsolator.m */; };
 		CAA3120E172B1B7F00277079 /* ISIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3120D172B1B7F00277079 /* ISIconView.m */; };
-		CABAB0A9172CCEB300772A67 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CABAB0A8172CCEB300772A67 /* icon.png */; };
+		CAEE04CD172F5DE000B8564F /* bar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEE04CC172F5DE000B8564F /* bar_icon.png */; };
+		CAEE04D5172F5F0F00B8564F /* icon_32_32.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEE04D0172F5F0F00B8564F /* icon_32_32.png */; };
+		CAEE04D7172F5F0F00B8564F /* icon_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEE04D2172F5F0F00B8564F /* icon_128x128.png */; };
+		CAEE04D8172F5F0F00B8564F /* icon_256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEE04D3172F5F0F00B8564F /* icon_256x256.png */; };
+		CAEE04D9172F5F0F00B8564F /* icon_512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEE04D4172F5F0F00B8564F /* icon_512x512.png */; };
+		CAEE04E1172F613D00B8564F /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = CAEE04E0172F613D00B8564F /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA16A718172994F90078E6AB /* backup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = backup; sourceTree = "<group>"; };
 		CA8680EB1728BA6000A0FB8F /* Isolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Isolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8680EE1728BA6000A0FB8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CA8680F11728BA6000A0FB8F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -42,7 +45,12 @@
 		CAA3120A172AE9BF00277079 /* ISIsolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISIsolator.m; sourceTree = "<group>"; };
 		CAA3120C172B1B7F00277079 /* ISIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISIconView.h; sourceTree = "<group>"; };
 		CAA3120D172B1B7F00277079 /* ISIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISIconView.m; sourceTree = "<group>"; };
-		CABAB0A8172CCEB300772A67 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		CAEE04CC172F5DE000B8564F /* bar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_icon.png; sourceTree = "<group>"; };
+		CAEE04D0172F5F0F00B8564F /* icon_32_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_32_32.png; sourceTree = "<group>"; };
+		CAEE04D2172F5F0F00B8564F /* icon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_128x128.png; sourceTree = "<group>"; };
+		CAEE04D3172F5F0F00B8564F /* icon_256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_256x256.png; sourceTree = "<group>"; };
+		CAEE04D4172F5F0F00B8564F /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512x512.png; sourceTree = "<group>"; };
+		CAEE04E0172F613D00B8564F /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 		CA8680E21728BA6000A0FB8F = {
 			isa = PBXGroup;
 			children = (
+				CAEE04CB172F5DBF00B8564F /* Resourses */,
 				CAA311FF172ADD6C00277079 /* Class */,
 				CA8680F41728BA6000A0FB8F /* Isolate */,
 				CA8680ED1728BA6000A0FB8F /* Frameworks */,
@@ -99,7 +108,6 @@
 			children = (
 				CA8681001728BA6000A0FB8F /* ISAppDelegate.h */,
 				CA8681011728BA6000A0FB8F /* ISAppDelegate.m */,
-				CA16A718172994F90078E6AB /* backup */,
 				CA8680F51728BA6000A0FB8F /* Supporting Files */,
 			);
 			path = Isolate;
@@ -120,7 +128,6 @@
 		CAA311FF172ADD6C00277079 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				CABAB0A8172CCEB300772A67 /* icon.png */,
 				CAA31209172AE9BF00277079 /* ISIsolator.h */,
 				CAA3120A172AE9BF00277079 /* ISIsolator.m */,
 				CAA31200172ADDCE00277079 /* ISAppListWindow.h */,
@@ -132,6 +139,29 @@
 			);
 			name = Class;
 			path = /Users/filipeximenes/Projects/Isolate/Class;
+			sourceTree = "<absolute>";
+		};
+		CAEE04CB172F5DBF00B8564F /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE04CF172F5EAC00B8564F /* icon.iconset */,
+				CAEE04CC172F5DE000B8564F /* bar_icon.png */,
+				CAEE04E0172F613D00B8564F /* icon.icns */,
+			);
+			name = Resourses;
+			path = /Users/filipeximenes/Projects/Isolate/Resourses;
+			sourceTree = "<absolute>";
+		};
+		CAEE04CF172F5EAC00B8564F /* icon.iconset */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE04D0172F5F0F00B8564F /* icon_32_32.png */,
+				CAEE04D2172F5F0F00B8564F /* icon_128x128.png */,
+				CAEE04D3172F5F0F00B8564F /* icon_256x256.png */,
+				CAEE04D4172F5F0F00B8564F /* icon_512x512.png */,
+			);
+			name = icon.iconset;
+			path = /Users/filipeximenes/Projects/Isolate/Resourses/icon.iconset;
 			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
@@ -188,8 +218,12 @@
 			files = (
 				CA8680F91728BA6000A0FB8F /* InfoPlist.strings in Resources */,
 				CA8680FF1728BA6000A0FB8F /* Credits.rtf in Resources */,
-				CA16A719172994F90078E6AB /* backup in Resources */,
-				CABAB0A9172CCEB300772A67 /* icon.png in Resources */,
+				CAEE04CD172F5DE000B8564F /* bar_icon.png in Resources */,
+				CAEE04D5172F5F0F00B8564F /* icon_32_32.png in Resources */,
+				CAEE04D7172F5F0F00B8564F /* icon_128x128.png in Resources */,
+				CAEE04D8172F5F0F00B8564F /* icon_256x256.png in Resources */,
+				CAEE04D9172F5F0F00B8564F /* icon_512x512.png in Resources */,
+				CAEE04E1172F613D00B8564F /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +292,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -285,8 +319,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
@@ -297,7 +331,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Isolate/Isolate-Prefix.pch";
 				INFOPLIST_FILE = "Isolate/Isolate-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -310,7 +344,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Isolate/Isolate-Prefix.pch";
 				INFOPLIST_FILE = "Isolate/Isolate-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -11,8 +11,7 @@
 
 @interface ISIsolator : NSObject
 
-@property BOOL commandKeyUp;
-@property BOOL tabKeyUp;
+@property BOOL commandKeyDown;
 @property BOOL switchedApplication;
 @property int currentSelected;
 

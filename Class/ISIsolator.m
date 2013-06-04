@@ -17,8 +17,8 @@ ISIsolator *isolator;
 {
     self = [super init];
     if (self) {
-        self.commandKeyUp = FALSE;
-        self.tabKeyUp = FALSE;
+        self.commandKeyDown = FALSE;
+//        self.tabKeyDown = FALSE;
         self.switchedApplication = FALSE;
         self.currentSelected = 0;        
         
@@ -81,19 +81,22 @@ ISIsolator *isolator;
 
 - (void) setupApplicationEnvironment
 {
-    NSMutableArray *pids = [ISIsolator getPidsForApplicationsOnCurrentSpace];
-    NSMutableDictionary *appDict = [ISIsolator getPidApplicationDictionary];
-    
-    self.spaceAppList = [[NSMutableArray alloc] init];
-    
-    for (int i = 0; i < pids.count; i++){
-        NSRunningApplication *app = [appDict objectForKey:[pids objectAtIndex:i]];
-        [self.spaceAppList addObject:app];
-    }    
+    if (self.spaceAppList == nil){
+        NSMutableArray *pids = [ISIsolator getPidsForApplicationsOnCurrentSpace];
+        NSMutableDictionary *appDict = [ISIsolator getPidApplicationDictionary];
+        
+        self.spaceAppList = [[NSMutableArray alloc] init];
+        
+        for (int i = 0; i < pids.count; i++){
+            NSRunningApplication *app = [appDict objectForKey:[pids objectAtIndex:i]];
+            [self.spaceAppList addObject:app];
+        }
+    }
 }
 
 - (void) nextApplication
-{    
+{
+    [self setupApplicationEnvironment];
     self.switchedApplication = TRUE;
     
     if (self.appWindow == nil){
@@ -105,33 +108,30 @@ ISIsolator *isolator;
         self.currentSelected = (self.currentSelected + 1) % self.spaceAppList.count;
         [self.appWindow hightlightItemOnPosition:self.currentSelected];
     }
-    
-//    NSRunningApplication *selectedApp = [self selectedApplication];
-//    if (selectedApp){
-//        NSLog(@"%@", [selectedApp localizedName]);
-//    }
 }
 
 CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon)
 {
-    if (CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode) == 0x37) {
-        if (isolator.commandKeyUp && isolator.switchedApplication){
-            [isolator switchApplication];
-        }else{
-            [isolator setupApplicationEnvironment];
-        }
+    if (CGEventGetType(event) == kCGEventFlagsChanged){
+        NSUInteger flags = CGEventGetFlags(event) & NSDeviceIndependentModifierFlagsMask;
         
-        isolator.commandKeyUp = !isolator.commandKeyUp;
+        if (CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode) == 0x37 &&
+            flags == NSCommandKeyMask){
+            isolator.commandKeyDown = TRUE;
+        }else{
+            isolator.commandKeyDown = FALSE;
+        }
     }
     
-    if (CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode) == 0x30) {
-        if (isolator.commandKeyUp && !isolator.tabKeyUp)
-        {
+    if (!isolator.commandKeyDown && isolator.switchedApplication){
+        [isolator switchApplication];
+    }
+    
+    if (isolator.commandKeyDown && CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode) == 0x30){
+        if (CGEventGetType(event) == kCGEventKeyDown){
             [isolator nextApplication];
             CGEventSetType(event, kCGEventNull);
         }
-        
-        isolator.tabKeyUp = !isolator.tabKeyUp;
     }
     
     return event;
