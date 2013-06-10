@@ -26,7 +26,7 @@ NSMenu *theMenu;
     theMenu = [[NSMenu alloc] initWithTitle:@""];
     [theMenu setAutoenablesItems:NO];
     
-    [theMenu addItemWithTitle:@"About Isolate" action:@selector(showAboutPane) keyEquivalent:@""];
+    [theMenu addItemWithTitle:@"About iSolate" action:@selector(showAboutPane) keyEquivalent:@""];
     [theMenu addItem:[NSMenuItem separatorItem]];    
     tItem = [theMenu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@""];
     

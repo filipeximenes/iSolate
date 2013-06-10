@@ -25,15 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA8680EB1728BA6000A0FB8F /* Isolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Isolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8680EB1728BA6000A0FB8F /* iSolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8680EE1728BA6000A0FB8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CA8680F11728BA6000A0FB8F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CA8680F21728BA6000A0FB8F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CA8680F31728BA6000A0FB8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CA8680F61728BA6000A0FB8F /* Isolate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Isolate-Info.plist"; sourceTree = "<group>"; };
+		CA8680F61728BA6000A0FB8F /* iSolate.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iSolate.plist; sourceTree = "<group>"; };
 		CA8680F81728BA6000A0FB8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA8680FA1728BA6000A0FB8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CA8680FC1728BA6000A0FB8F /* Isolate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Isolate-Prefix.pch"; sourceTree = "<group>"; };
+		CA8680FC1728BA6000A0FB8F /* iSolate.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSolate.pch; sourceTree = "<group>"; };
 		CA8680FE1728BA6000A0FB8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		CA8681001728BA6000A0FB8F /* ISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISAppDelegate.h; sourceTree = "<group>"; };
 		CA8681011728BA6000A0FB8F /* ISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISAppDelegate.m; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		CA8680EC1728BA6000A0FB8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA8680EB1728BA6000A0FB8F /* Isolate.app */,
+				CA8680EB1728BA6000A0FB8F /* iSolate.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,10 +116,10 @@
 		CA8680F51728BA6000A0FB8F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CA8680F61728BA6000A0FB8F /* Isolate-Info.plist */,
+				CA8680F61728BA6000A0FB8F /* iSolate.plist */,
 				CA8680F71728BA6000A0FB8F /* InfoPlist.strings */,
 				CA8680FA1728BA6000A0FB8F /* main.m */,
-				CA8680FC1728BA6000A0FB8F /* Isolate-Prefix.pch */,
+				CA8680FC1728BA6000A0FB8F /* iSolate.pch */,
 				CA8680FD1728BA6000A0FB8F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA8680EA1728BA6000A0FB8F /* Isolate */ = {
+		CA8680EA1728BA6000A0FB8F /* iSolate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA8681081728BA6000A0FB8F /* Build configuration list for PBXNativeTarget "Isolate" */;
+			buildConfigurationList = CA8681081728BA6000A0FB8F /* Build configuration list for PBXNativeTarget "iSolate" */;
 			buildPhases = (
 				CA8680E71728BA6000A0FB8F /* Sources */,
 				CA8680E81728BA6000A0FB8F /* Frameworks */,
@@ -179,9 +179,9 @@
 			);
 			dependencies = (
 			);
-			name = Isolate;
+			name = iSolate;
 			productName = Isolate;
-			productReference = CA8680EB1728BA6000A0FB8F /* Isolate.app */;
+			productReference = CA8680EB1728BA6000A0FB8F /* iSolate.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -194,7 +194,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Filipe Ximenes";
 			};
-			buildConfigurationList = CA8680E61728BA6000A0FB8F /* Build configuration list for PBXProject "Isolate" */;
+			buildConfigurationList = CA8680E61728BA6000A0FB8F /* Build configuration list for PBXProject "ISolate" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -206,7 +206,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA8680EA1728BA6000A0FB8F /* Isolate */,
+				CA8680EA1728BA6000A0FB8F /* iSolate */,
 			);
 		};
 /* End PBXProject section */
@@ -329,10 +329,10 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Isolate/Isolate-Prefix.pch";
-				INFOPLIST_FILE = "Isolate/Isolate-Info.plist";
+				GCC_PREFIX_HEADER = Isolate/iSolate.pch;
+				INFOPLIST_FILE = Isolate/iSolate.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iSolate;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -342,10 +342,10 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Isolate/Isolate-Prefix.pch";
-				INFOPLIST_FILE = "Isolate/Isolate-Info.plist";
+				GCC_PREFIX_HEADER = Isolate/iSolate.pch;
+				INFOPLIST_FILE = Isolate/iSolate.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iSolate;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -353,7 +353,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA8680E61728BA6000A0FB8F /* Build configuration list for PBXProject "Isolate" */ = {
+		CA8680E61728BA6000A0FB8F /* Build configuration list for PBXProject "ISolate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA8681061728BA6000A0FB8F /* Debug */,
@@ -362,7 +362,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA8681081728BA6000A0FB8F /* Build configuration list for PBXNativeTarget "Isolate" */ = {
+		CA8681081728BA6000A0FB8F /* Build configuration list for PBXNativeTarget "iSolate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA8681091728BA6000A0FB8F /* Debug */,

@@ -113,10 +113,11 @@ ISIsolator *isolator;
 CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon)
 {
     if (CGEventGetType(event) == kCGEventFlagsChanged){
+        
+        
         NSUInteger flags = CGEventGetFlags(event) & NSDeviceIndependentModifierFlagsMask;
         
-        if (CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode) == 0x37 &&
-            flags == NSCommandKeyMask){
+        if (flags == NSCommandKeyMask){
             isolator.commandKeyDown = TRUE;
         }else{
             isolator.commandKeyDown = FALSE;

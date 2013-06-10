@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CA8680EA1728BA6000A0FB8F"
-               BuildableName = "Isolate.app"
-               BlueprintName = "Isolate"
-               ReferencedContainer = "container:Isolate.xcodeproj">
+               BuildableName = "iSolate.temp_caseinsensitive_rename.app"
+               BlueprintName = "iSolate"
+               ReferencedContainer = "container:ISolate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA8680EA1728BA6000A0FB8F"
-            BuildableName = "Isolate.app"
-            BlueprintName = "Isolate"
-            ReferencedContainer = "container:Isolate.xcodeproj">
+            BuildableName = "iSolate.temp_caseinsensitive_rename.app"
+            BlueprintName = "iSolate"
+            ReferencedContainer = "container:ISolate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA8680EA1728BA6000A0FB8F"
-            BuildableName = "Isolate.app"
-            BlueprintName = "Isolate"
-            ReferencedContainer = "container:Isolate.xcodeproj">
+            BuildableName = "iSolate.temp_caseinsensitive_rename.app"
+            BlueprintName = "iSolate"
+            ReferencedContainer = "container:ISolate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA8680EA1728BA6000A0FB8F"
-            BuildableName = "Isolate.app"
-            BlueprintName = "Isolate"
-            ReferencedContainer = "container:Isolate.xcodeproj">
+            BuildableName = "iSolate.temp_caseinsensitive_rename.app"
+            BlueprintName = "iSolate"
+            ReferencedContainer = "container:ISolate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
