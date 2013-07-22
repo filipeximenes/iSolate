@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CA8680EA1728BA6000A0FB8F"
-               BuildableName = "iSolate.temp_caseinsensitive_rename.app"
+               BuildableName = "iSolate.app"
                BlueprintName = "iSolate"
                ReferencedContainer = "container:ISolate.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA8680EA1728BA6000A0FB8F"
-            BuildableName = "iSolate.temp_caseinsensitive_rename.app"
+            BuildableName = "iSolate.app"
             BlueprintName = "iSolate"
             ReferencedContainer = "container:ISolate.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA8680EA1728BA6000A0FB8F"
-            BuildableName = "iSolate.temp_caseinsensitive_rename.app"
+            BuildableName = "iSolate.app"
             BlueprintName = "iSolate"
             ReferencedContainer = "container:ISolate.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA8680EA1728BA6000A0FB8F"
-            BuildableName = "iSolate.temp_caseinsensitive_rename.app"
+            BuildableName = "iSolate.app"
             BlueprintName = "iSolate"
             ReferencedContainer = "container:ISolate.xcodeproj">
          </BuildableReference>

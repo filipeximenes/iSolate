@@ -12,6 +12,7 @@
 @implementation ISIsolator
 
 ISIsolator *isolator;
+CFMachPortRef eventTap;
 
 - (id)init
 {
@@ -34,7 +35,7 @@ ISIsolator *isolator;
 {
     CFRunLoopSourceRef runLoopSource;
     
-    CFMachPortRef eventTap = CGEventTapCreate(kCGHIDEventTap, kCGHeadInsertEventTap, kCGEventTapOptionDefault, kCGEventMaskForAllEvents, myCGEventCallback, NULL);
+    eventTap = CGEventTapCreate(kCGHIDEventTap, kCGHeadInsertEventTap, kCGEventTapOptionDefault, kCGEventMaskForAllEvents, myCGEventCallback, NULL);
     
     if (!eventTap) {
         NSLog(@"Couldn't create event tap!");
@@ -112,9 +113,12 @@ ISIsolator *isolator;
 
 CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon)
 {
+    if (type == kCGEventTapDisabledByTimeout) {
+        NSLog(@"Event Taps Disabled! Re-enabling");
+        CGEventTapEnable(eventTap, true);
+    }
+    
     if (CGEventGetType(event) == kCGEventFlagsChanged){
-        
-        
         NSUInteger flags = CGEventGetFlags(event) & NSDeviceIndependentModifierFlagsMask;
         
         if (flags == NSCommandKeyMask){
