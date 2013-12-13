@@ -9,6 +9,7 @@
 #import "ISIsolator.h"
 #import "ISAppListWindow.h"
 
+
 @implementation ISIsolator
 
 ISIsolator *isolator;
@@ -31,9 +32,22 @@ CFMachPortRef eventTap;
     return self;
 }
 
+extern Boolean AXIsProcessTrustedWithOptions(CFDictionaryRef options) __attribute__((weak_import));
+extern CFStringRef kAXTrustedCheckOptionPrompt __attribute__((weak_import));
+extern Boolean AXAPIEnabled ();
+
 - (void)setupEventDrain
 {
     CFRunLoopSourceRef runLoopSource;
+
+    if (!AXAPIEnabled()){
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert addButtonWithTitle:@"OK"];
+        [alert setMessageText:@"Enable access for assistive devices"];
+        [alert setInformativeText:@"iSolate requires access for assistive devices. Please enable it at: Settings > Universal Access"];
+        [alert setAlertStyle:NSWarningAlertStyle];
+        [alert runModal];
+    }
     
     eventTap = CGEventTapCreate(kCGHIDEventTap, kCGHeadInsertEventTap, kCGEventTapOptionDefault, kCGEventMaskForAllEvents, myCGEventCallback, NULL);
     
@@ -47,7 +61,7 @@ CFMachPortRef eventTap;
     CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, kCFRunLoopCommonModes);
     
     CGEventTapEnable(eventTap, true);
-    
+
     CFRunLoopRun();
     
     CFRelease(eventTap);
@@ -112,7 +126,7 @@ CFMachPortRef eventTap;
 }
 
 CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon)
-{
+{    
     if (type == kCGEventTapDisabledByTimeout) {
         NSLog(@"Event Taps Disabled! Re-enabling");
         CGEventTapEnable(eventTap, true);
