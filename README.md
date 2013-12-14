@@ -5,9 +5,8 @@ iSolate makes beter use of Mac OS X Spaces feature so you can be more productive
 # Instalation
 
 ### From application
-Dowload from:
 
-``https://github.com/filipeximenes/iSolate/releases/latest``
+Download application [here](https://github.com/filipeximenes/iSolate/releases/latest).
 
 - Open .dmg file and copy iSolate.app to your applications directory.  
 
