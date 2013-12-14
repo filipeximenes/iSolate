@@ -30,6 +30,6 @@ Go to ``System Preferences`` > ``Universal Access`` > ``Enable access for assist
 
 #### Mac OS 10.9
 
-``http://support.apple.com/kb/HT6026``
+[Link to instructions](http://support.apple.com/kb/HT6026)
 
 
